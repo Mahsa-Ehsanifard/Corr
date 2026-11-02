@@ -1,7 +1,5 @@
 
-# Correlation Analysis in R  
-<p align="right">
-  <img src="images/logo.png" width="80" alt="Project Logo">
+# Correlation Analysis in R  <img src="images/logo.png" width="80" alt="Project Logo">
 </p>
 
 ![](https://img.shields.io/badge/Biostatistics-8A2BE2)
