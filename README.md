@@ -42,6 +42,10 @@ results <- data.frame(
   pvalue = corr_test$p.value)
 ```
 
+* A commonly used significance threshold is: `P-value < 0.05`
+
+***
+
 ## Applications in **Bioinformatics**
 
 ### 1. **Gene–Gene Expression Correlation**
@@ -66,3 +70,5 @@ Correlation coefficient | Interpretation
 -1                      | Perfect negative correlation
 
 > *Note*: These ranges are meant as illustrative guidelines, not universal statistical thresholds. Interpretation should depend on the research context and biological relevance.
+
+
