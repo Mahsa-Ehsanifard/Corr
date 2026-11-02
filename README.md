@@ -1,10 +1,8 @@
-
+ <img src="images/logo.png" width="120" align="right" hspace="20" alt="Project Logo">
+ 
 <h1>Correlation Analysis in R</h1>
- <p>Statistical correlation analysis for bioinformatics research</p> 
- <p align="right" width="400">
-  <img src="images/logo.png" width="80" alt="Project Logo">
-  </p>
-
+ <p>Statistical correlation analysis for bioinformatics research</p>
+ 
 ![](https://img.shields.io/badge/Biostatistics-8A2BE2)
 ![](https://img.shields.io/badge/Rstudio-4.5.1-%23276DC3?logo=r)      
 
