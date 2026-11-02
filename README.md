@@ -53,3 +53,14 @@ results <- data.frame(
 
 > *Note*: *Negative* or *Positive* correlations may support a potential regulatory relationship, although correlation alone does not establish direct targeting.
 
+Correlation coefficient | Interpretation 
+----------------------- | ----------------
++1                      | Perfect positive correlation
+0.70 to 0.99            | Strong positive correlation
+0.40 to 0.69            | Moderate positive correlation
+0.10 to 0.39            | Weak positive correlation
+0                       | No linear correlation (Pearson)
+-0.10 to -0.39          | Weak negative correlation
+-0.40 to -0.69          | Moderate negative correlation
+-0.70 to -0.99          | Strong negative correlation
+-1                      | Perfect negative correlation
