@@ -64,3 +64,5 @@ Correlation coefficient | Interpretation
 -0.40 to -0.69          | Moderate negative correlation
 -0.70 to -0.99          | Strong negative correlation
 -1                      | Perfect negative correlation
+
+> *Note*: These ranges are meant as illustrative guidelines, not universal statistical thresholds. Interpretation should depend on the research context and biological relevance.
