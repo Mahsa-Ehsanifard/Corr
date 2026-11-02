@@ -398,10 +398,13 @@ association is statistically significant</p>
 <p>In argument <code>method</code>, the correlation method is
 selected:</p>
 </blockquote>
-</div>
-<div id="note-the-imported-data-should-be-in-normalized-log-scale-values-in-class-of-matrix." class="section level4">
-<h4><em>Note</em>: The imported data should be in
-<code>Normalized log-scale</code> values in class of matrix.</h4>
+<ul>
+<li>The imported data should be in <code>Normalized log-scale</code>
+values in class of matrix.</li>
+<li>The samples between two matrix should be the same in numbers and
+characters</li>
+<li>Rows are genes or other RNAs</li>
+</ul>
 <pre><code>cor.test(matrix1, matrix2, method = &quot;pearson&quot;)
 cor.test(matrix1, matrix2, method = &quot;Spearman&quot;)</code></pre>
 <blockquote>
@@ -416,7 +419,6 @@ cor.test(matrix1, matrix2, method = &quot;Spearman&quot;)</code></pre>
 <li>A commonly used significance threshold is:
 <code>P-value &lt; 0.05</code></li>
 </ul>
-<hr />
 </div>
 </div>
 <div id="applications-in-bioinformatics" class="section level2">
@@ -495,6 +497,17 @@ alone does not establish direct targeting.</p>
 universal statistical thresholds. Interpretation should depend on the
 research context and biological relevance.</p>
 </blockquote>
+</div>
+</div>
+<div id="visualization" class="section level2">
+<h2>Visualization</h2>
+<div id="scatter-plot" class="section level3">
+<h3>Scatter Plot</h3>
+<pre><code>library(ggplot2)
+library(ggpubr)</code></pre>
+<pre><code>df &lt;- data.frame(
+  genes = as.numeric(genes),
+  lncRNA = as.numeric(lncRNA))</code></pre>
 </div>
 </div>
 </div>

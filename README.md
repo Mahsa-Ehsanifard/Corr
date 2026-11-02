@@ -25,8 +25,9 @@ cor.test()
 ```
 > In argument `method`, the correlation method is selected:
 
-#### *Note*: The imported data should be in `Normalized log-scale` values in class of matrix.
-
+* The imported data should be in `Normalized log-scale` values in class of matrix.
+* The samples between two matrix should be the same in numbers and characters
+* Rows are genes or other RNAs 
 
 ```
 cor.test(matrix1, matrix2, method = "pearson")
@@ -44,7 +45,6 @@ results <- data.frame(
 
 * A commonly used significance threshold is: `P-value < 0.05`
 
-***
 
 ## Applications in **Bioinformatics**
 
@@ -70,5 +70,20 @@ Correlation coefficient | Interpretation
 -1                      | Perfect negative correlation
 
 > *Note*: These ranges are meant as illustrative guidelines, not universal statistical thresholds. Interpretation should depend on the research context and biological relevance.
+
+
+## Visualization
+### Scatter Plot
+```
+library(ggplot2)
+library(ggpubr)
+```
+```
+df <- data.frame(
+  genes = as.numeric(genes),
+  lncRNA = as.numeric(lncRNA))
+```
+
+
 
 
