@@ -1,0 +1,43 @@
+
+# Correlation Analysis in R    <img src="C:/Users/resam/Desktop/logo.png" width="80">
+
+![](https://img.shields.io/badge/Biostatistics-8A2BE2)
+![](https://img.shields.io/badge/Rstudio-4.5.1-%23276DC3?logo=r)          
+
+# ```Correlation``` is a statistical approach used to investigate the strength and direction of relationships between two or more variables.
+### In bioinformatics, it is particularly useful for exploring associations between gene expression profiles, miRNAs, lncRNAs, circRNAs, clinical variables, and molecular biomarkers.
+
+### **The Two most popular methods:**
+
+### **1. Pearson Correlation**
+#### ```Pearson's correlation``` coefficient (r) measures the direction of a **linear relationship** between two variables.
+
+### **2. Spearman rank-based Correlation**
+#### ```Spearman's rank correlation``` coefficient (rho) evaluates monotonic relationships between two variables using their ranks.
+
+> The test gives you a **correlation coefficient** between −1 and +1 and a **p-value** that tells you whether the association is statistically significant
+
+> RStudio function:
+```
+cor.test()
+```
+> In argument ```method```, the correlation method is selected:
+
+#### *Note*: The imported data should be in ```Normalized log-scale``` values in class of matrix.
+
+
+```
+cor.test(matrix1, matrix2, method = "pearson")
+cor.test(matrix1, matrix2, method = "Spearman")
+```
+
+> Extracting results with P.value:
+```
+results <- data.frame(
+  X,
+  Y,
+  cor = corr_test$estimate,
+  pvalue = corr_test$p.value)
+```
+
+
