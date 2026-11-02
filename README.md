@@ -10,10 +10,10 @@
 ### **The Two most popular methods:**
 
 ### **1. Pearson Correlation**
-#### ```Pearson's correlation``` coefficient (r) measures the direction of a **linear relationship** between two variables.
+#### `Pearson's correlation` coefficient (r) measures the direction of a **linear relationship** between two variables.
 
 ### **2. Spearman rank-based Correlation**
-#### ```Spearman's rank correlation``` coefficient (rho) evaluates monotonic relationships between two variables using their ranks.
+#### `Spearman's rank correlation` coefficient (rho) evaluates monotonic relationships between two variables using their ranks.
 
 > The test gives you a **correlation coefficient** between −1 and +1 and a **p-value** that tells you whether the association is statistically significant
 
@@ -21,9 +21,9 @@
 ```
 cor.test()
 ```
-> In argument ```method```, the correlation method is selected:
+> In argument `method`, the correlation method is selected:
 
-#### *Note*: The imported data should be in ```Normalized log-scale``` values in class of matrix.
+#### *Note*: The imported data should be in `Normalized log-scale` values in class of matrix.
 
 
 ```
