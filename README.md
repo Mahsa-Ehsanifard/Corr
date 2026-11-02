@@ -1,15 +1,10 @@
 
-<table>
-  <tr>
-    <td>
-      <h1>Correlation Analysis in R</h1>
-      <p>Statistical correlation analysis for bioinformatics research</p>
-    </td>
-    <td align="right" width="600">
-      <img src="images/logo.png" width="120" alt="Project Logo">
-    </td>
-  </tr>
-</table>
+<h1>Correlation Analysis in R</h1>
+ <p>Statistical correlation analysis for bioinformatics research</p> 
+ <p align="right" width="400">
+  <img src="images/logo.png" width="80" alt="Project Logo">
+  </p>
+
 ![](https://img.shields.io/badge/Biostatistics-8A2BE2)
 ![](https://img.shields.io/badge/Rstudio-4.5.1-%23276DC3?logo=r)      
 
