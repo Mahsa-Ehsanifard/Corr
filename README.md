@@ -1,5 +1,5 @@
 
-# Correlation Analysis in R  <img src="E:/my R/github/Corr/R-Correlation-Analysis/logo.png" width="80">         
+# Correlation Analysis in R  <img src="E:/my R/github/Corr/logo.png" width="80">         
 
 ![](https://img.shields.io/badge/Biostatistics-8A2BE2)
 ![](https://img.shields.io/badge/Rstudio-4.5.1-%23276DC3?logo=r)          
@@ -40,4 +40,14 @@ results <- data.frame(
   pvalue = corr_test$p.value)
 ```
 
+## Applications in **Bioinformatics**
+
+### 1. **Gene–Gene Expression Correlation**
+> Investigating *co-expression* patterns and identifying potential functional associations.
+
+### 2. **miRNA–mRNA Correlation** `core < 0` *Negative*
+### 3. **lncRNA–miRNA Correlation** `cor < 0` *Negative*
+### 4. **lncRNA-mRNA Correlation** `cor > 0` *Positive*
+
+> *Note*: *Negative* or *Positive* correlations may support a potential regulatory relationship, although correlation alone does not establish direct targeting.
 
