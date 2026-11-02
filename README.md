@@ -1,10 +1,10 @@
 
-# Correlation Analysis in R  <img src="E:/my R/github/Corr/logo.png" width="80">         
+# Correlation Analysis in R  <img src="E:/my R/github/Corr/logo.png" width="50"> 
 
 ![](https://img.shields.io/badge/Biostatistics-8A2BE2)
 ![](https://img.shields.io/badge/Rstudio-4.5.1-%23276DC3?logo=r)          
 
-# ```Correlation``` is a statistical approach used to investigate the strength and direction of relationships between two or more variables.
+# ```Correlation``` is a statistical approach used to investigate the strength and direction of relationships between two or more variables. 
 ### In bioinformatics, it is particularly useful for exploring associations between gene expression profiles, miRNAs, lncRNAs, circRNAs, clinical variables, and molecular biomarkers.
 
 ### **The two most popular methods:**
