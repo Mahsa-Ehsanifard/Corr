@@ -1,5 +1,6 @@
 
-# Correlation Analysis in R    <img src="C:/Users/resam/Desktop/logo.png" width="80">
+# Correlation Analysis in R    
+<img src="C:/Users/resam/Desktop/logo.png" width="80">
 
 ![](https://img.shields.io/badge/Biostatistics-8A2BE2)
 ![](https://img.shields.io/badge/Rstudio-4.5.1-%23276DC3?logo=r)          
