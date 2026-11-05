@@ -136,6 +136,6 @@ ggplot(df, aes(x = hsa_mir_..., y = gene)) +
 
 #### When there is **Negative** correlation in scatter plot:
 
-![](E:/my R/github/Corr/images/N.png)
+![](images/N.png)
 
 - The names of gene and miRNA labeled in the plot are only for an example.
