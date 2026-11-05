@@ -80,7 +80,6 @@ results <- data.frame(
 > *Note*: These ranges are meant as illustrative guidelines, not universal statistical thresholds. Interpretation should depend on the research context and biological relevance.
 
 ## Visualization
-
 ### Scatter Plot
 
 - These codes are for an example
@@ -139,3 +138,32 @@ ggplot(df, aes(x = hsa_mir_..., y = gene)) +
 ![](E:/my R/github/Corr/images/N.png)
 
 - The names of gene and miRNA labeled in the plot are only for an example.
+
+### Heatmap
+
+```
+library(ggcorrplot)
+
+mir <- data.frame(miRNA_source[10:20,])
+mrna <- data.frame(mRNA_tar[10:20,])
+mat <- rbind(mir,mrna)
+tm <- t(mat)
+
+corr1 <- cor(tm)
+```
+
+> Try to choose a few number of genes and miRNas (or other molecules), *the most important ones*, for evaluate their interactions 
+
+```
+ggcorrplot(
+  corr1,
+  method = "circle",
+  type = "lower",
+  lab = TRUE,
+  lab_size = 3,
+  colors = c("blue", "white", "red"),
+  outline.color = "white")
+```
+
+![](images/Rplot.png)
+
