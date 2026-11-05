@@ -71,18 +71,60 @@ Correlation coefficient | Interpretation
 
 > *Note*: These ranges are meant as illustrative guidelines, not universal statistical thresholds. Interpretation should depend on the research context and biological relevance.
 
-
 ## Visualization
 ### Scatter Plot
+* These codes are for an example 
+
 ```
 library(ggplot2)
 library(ggpubr)
 ```
 ```
 df <- data.frame(
-  genes = as.numeric(genes),
-  lncRNA = as.numeric(lncRNA))
+  hsa_mir_... = as.numeric(miRNA_source["hsa-mir-...", ]),
+  gene = as.numeric(mRNA_tar["gene", ]))
 ```
+* *Note*: Samples in both matrix tables should be the same
+
+```
+cor_test <- cor.test(df$gene, df$mir, method = "pearson")
+```
+```
+rho <- round(
+  cor_test$estimate,3)
+  
+pval <- format.pval(
+  cor_test$p.value,
+  digits = 3,
+  eps = 0.001)
+```
+```
+ggplot(df, aes(x = hsa_mir_..., y = gene)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red") +
+  ggtitle("Correlation: miRNA vs gene") +
+  theme_light()+
+  annotate(
+    "text",
+    x = Inf,
+    y = Inf,
+    label = paste0("R = ", rho,   " ,p = ", pval),
+    hjust = 1.5,
+    vjust = 1,
+    size = 5)
+```
+
+#### When there is **positive** correlation in scatter plot:
+
+![](C:/Users/resam/Desktop/p.png)
+
+* The names of gene and lncRNA labeled in the plot are only for an example.
+
+#### When there is **Negative** correlation in scatter plot:
+
+![](C:/Users/resam/Desktop/N.png)
+
+* The names of gene and miRNA labeled in the plot are only for an example.
 
 
 
