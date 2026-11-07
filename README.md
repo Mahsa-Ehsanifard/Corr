@@ -138,13 +138,13 @@ ggplot(df, aes(x = hsa_mir_..., y = gene)) +
     size = 5)
 ```
 
-#### When there is **positive** correlation in scatter plot:
+> When there is **positive** correlation in scatter plot:
 
 ![](images/p.png)
 
 - The names of gene and lncRNA labeled in the plot are only for an example.
 
-#### When there is **Negative** correlation in scatter plot:
+> When there is **Negative** correlation in scatter plot:
 
 ![](images/N.png)
 
