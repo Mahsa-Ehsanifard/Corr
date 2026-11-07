@@ -79,6 +79,16 @@ results <- data.frame(
 
 > *Note*: These ranges are meant as illustrative guidelines, not universal statistical thresholds. Interpretation should depend on the research context and biological relevance.
 
+#### Correlation between different RNAs
+
+| Biological Application                    |  Analysis    |
+|-------------------------------------------|--------------|
+| Co-expression analysis                    |  Gene–Gene   |
+| Potential post-transcriptional regulation | miRNA–mRNA   |
+| Potential RNA regulatory interactions     | lncRNA–miRNA |
+| Co-expression patterns                    | lncRNA–mRNA  |
+| Potential ceRNA interactions              | circRNA–miRNA|
+
 ## Visualization
 
 ### Scatter Plot
@@ -168,7 +178,7 @@ ggcorrplot(
 
 ![](images/Rplot.png)
 
-```
+```         
 library(corrplot)
 
 mir <- data.frame(miRNA_source["hsa-mir-...",])
@@ -178,7 +188,8 @@ mat <- cbind(mir,mrna)
 
 corr2 <- cor(mat)
 ```
-```
+
+```         
 corrplot(
   corr2,
   method = "square",number.cex = 0.58,
@@ -188,10 +199,7 @@ corrplot(
   tl.col = "black",
   tl.srt = 50)
 ```
-* The appearance of plot can be changed by selection
+
+- The appearance of plot can be changed by selection
 
 ![](images/Rplot01.png)
-
-
-
-
